@@ -18,7 +18,7 @@
             autoplay: true,
             delay: 8000,
             speed: 750,
-            easing: 'swing',  //"linear" 或 "swing"
+            easing: 'swing', //"linear" 或 "swing"
             perView: 1,
             
             // 动画选择
