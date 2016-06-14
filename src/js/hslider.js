@@ -1,5 +1,5 @@
 /*!
- * uislider v1.0.0
+ * hslider v1.0.0
  * author peterhzc
  * date 2016-06-01
  */
@@ -7,9 +7,9 @@
     if(!$) {
 		return console.warn("请加载jquery");
 	};
-    var Uislider = function(ele,opts){
+    var Hslider = function(ele,opts){
         var slider = this;
-        slider.name = "uislider";
+        slider.name = "hslider";
         slider.ele = ele;
         slider.defaults = {
             index : 0,
@@ -18,7 +18,7 @@
             autoplay: true,
             delay: 8000,
             speed: 750,
-            easing: 'swing',  //"linear" 或 "swing"
+            easing: 'swing', //"linear" 或 "swing"
             perView: 1,
             
             // 动画选择
@@ -52,9 +52,7 @@
             animation = slider.options.animation,
             total = $contentItems.length,
             indexRandom  = parseInt(total * Math.random());
-            
-        
-        
+
         //图片懒惰加载
         slider.imgLazy = function(ul,index){
             var $li = ul.children("li");
@@ -221,11 +219,11 @@
         
     };
     
-    //定义 jquery.uislider 插件
-    $.fn.uislider = function(options) {
+    //定义 jquery.hslider 插件
+    $.fn.hslider = function(options) {
         return this.each(function() {
 			var $this = $(this);
-            return new Uislider($this, options);
+            return new Hslider($this, options);
         });
     };
 
