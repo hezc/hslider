@@ -1,5 +1,5 @@
 /*!
- * hslider v1.0.0
+ * hslider v1.0.0 
  * author peterhzc
  * date 2016-06-01
  */
