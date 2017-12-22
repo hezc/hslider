@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* reset */
+ul,li{margin:0;padding:0;}
+
+/* 首屏 */
+.hslider{height:280px;width:630px;overflow: hidden;position: relative;}
+.hslider-content li{ display: block;  position: relative; z-index: 1;  width: 630px;  height: 280px;  overflow: hidden;float: left}
+.hslider-content .hslider-c{display: none;}
+.hslider-content .active{display: block;}
+.hslider .main-img {display:block;}
+.hslider .left-img { opacity:0; display: block;z-index: 1;position: absolute;left:-800px;_left: 0;_display: none;top: 0;}
+.hslider .right-img { opacity:0; display: block;z-index: 2;position: absolute;right:20px;_right: 0;_display: none;top: 0;}
+.hslider-nav{ position: absolute; z-index: 2; bottom: 15px; right: 15px; }
+.hslider-nav li{background:#fff;float:left;display: inline;width: 25px;height:7px;margin-left:3px;font-size:0;line-height:0; opacity: 0.4;filter: alpha(opacity=40);overflow: hidden;cursor: pointer}
+.hslider-nav li.active{ opacity: 1; filter: alpha(opacity=100); }
+.hslider .next,.hslider .prev{position:absolute;top:50%;margin-top:-31px;z-index:1;width:28px;height:62px;line-height:62px;background: #000;background:rgba(0,0,0,.2);color:#fff;text-align:center;font-size:22px;font-weight:400;font-family:simsun;cursor: pointer;_background-color: #000;filter: alpha(opacity=20);-webkit-user-select:none;}
+.hslider .hslider-pager{display:none;}
+.hslider:hover .hslider-pager{display:block;}
+.hslider .prev{left:0;border-radius:0 5px 5px 0;}
+.hslider .next{right:0;border-radius:5px 0 0 5px;}
+
+
+#J_slider2 .hslider-content{position: absolute;top:0;}
+#J_slider2 .hslider-content .hslider-c{float:left;overflow:hidden; display: inline; float: left;}
+
+
+#J_slider3 .hslider-content{position: absolute;top:0;}
+#J_slider3 .hslider-content .hslider-c{float:left;overflow:hidden; display: inline; float: left;}
+
+
+#J_slider4 .hslider-content{position: absolute;top:0;}
+#J_slider4 .hslider-content .hslider-c{display:inline;position: absolute;left:0;top:0;opacity:0;transition: opacity 0.3s ease-in;}
+#J_slider4 .hslider-content .active{opacity:1;}
